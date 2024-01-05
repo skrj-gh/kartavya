@@ -208,9 +208,9 @@ main{
     background-size:contain;
   }
   
-  .front{
+  /* .front{
     background-image: url("../resources/try.jpg");
-  }
+  } */
 
   .front:after{
       position: absolute;

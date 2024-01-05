@@ -24,12 +24,12 @@ export default async function CardList() {
         // <div key={card.id} className="col" onTouchStart="this.classList.toggle('hover');">
         <div key={card.id} className="col">
             <div className="container">
-                <div className="front" style={{sectionStyle, backgroundImage:card.img}}>
+                <div className="front" style={{sectionStyle, backgroundImage:`${card.img}`}}>
                     <div className="inner">
                     <p>{card.heading}</p>
                     </div>
                 </div>
-                <div className="back" style={{backgroundImage:`${card.img}`}}>
+                <div className="back">
                     <div className="inner">
                     <p>{card.body}</p>
                     </div>
