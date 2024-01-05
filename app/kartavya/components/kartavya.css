@@ -1,8 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* PLEASE DEFINE FONTS */
 
 :root{
     --text1: 10vh;
@@ -35,7 +35,7 @@ main{
 .hand_lower{
     width: 30vw;
     float: right;
-    margin-top: -15vh;
+    margin-top: -12vh;
     -webkit-animation: cspin 8s ease-in-out infinite;
     -moz-animation: cspin 8s ease-in-out infinite;
     animation: cspin 8s ease-in-out infinite;
@@ -55,10 +55,11 @@ main{
 
 .large_card{
     width: 80vw;
-    height: calc((1034/2519)*80vw);
+    aspect-ratio: 2519/1034;
     margin: 20vh auto 8vh;
-    background-image: url("./kartavya/resources/large_card.png");
-    background-size:cover;
+    border-radius: 30px;
+    background-image: url("../resources/try_large.jpg");
+    background-size:contain;
 }
 
 .large_card h4{
@@ -81,20 +82,7 @@ main{
     width: 80vw;
     margin: 0 auto;
     column-gap: 3vw;
-}
-
-.small_card{
-    height: calc((970/772)*24.667vw);
-    background-size:cover;
-    margin: 8vh 0;
-}
-
-.small_card h4{
-    padding-top: calc((830/772)*24.667vw);
-    font-weight: 600;
-    font-size: var(--text2); 
-    text-align: left;
-    padding-left: 10%;
+    row-gap: 8vh;
 }
 
 .achievements{
@@ -176,41 +164,52 @@ main{
   
   .col{
     cursor: pointer;
+    width: 100%;
+    aspect-ratio: 772/970;
   }
   
   .container{
+    width: 100%;
+    aspect-ratio: 772/970;
+
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
       -webkit-perspective: 1000px;
               perspective: 1000px;
   }
 
+
+
+  /* NEEDS WORK HERE */
   
   .front,
   .back{
-    height: calc((970/772)*24.667vw);
+    width: 100%;
+    aspect-ratio: 772/970;
+    border-radius: 30px;
+
     background-size:cover;
-    margin: 8vh 0;
-    background-position: center;
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
+      background-position: center;
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      text-align: center;
+      color: #fff;
   }
   
   .back{
-    height: calc((970/772)*24.667vw);
-    background-image: url("./kartavya/resources/small_card.png");
-    background-size:cover;
-    margin: 0 0;
+    background-image: url("../resources/small_card.png");
+    background-size:contain;
   }
   
+  .front{
+    background-image: url("../resources/try.jpg");
+  }
+
   .front:after{
       position: absolute;
       top: 0;
@@ -248,6 +247,7 @@ main{
       left: 0;
       width: 100%;
       padding: 2rem;
+
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       outline: 1px solid transparent;
@@ -284,38 +284,24 @@ main{
             transform-style: preserve-3d;
   }
   
-  .front .inner p{
-    padding-top: calc((770/772)*24.667vw);
-    font-weight: 600;
-    font-size: var(--text2); 
-    text-align: left;
-    padding-left: 0%;
-  }
+.front .inner p{
+padding-top: calc((770/772)*24.667vw);
+font-weight: 600;
+font-size: var(--text2); 
+text-align: left;
+padding-left: 0%;
+}
+
   
-  @media screen and (max-width: 64rem){
-    .col{
-      width: calc(33.333333% - 2rem);
-    }
-  }
-  
-  @media screen and (max-width: 48rem){
-    .col{
-      width: calc(50% - 2rem);
-    }
-  }
-  
-  @media screen and (max-width: 32rem){
-    .col{
-      width: 100%;
-      margin: 0 0 2rem 0;
-    }
-  }
+.back .inner p{
+    font-size: var(--text3);
+}
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1025px){
 
     .hand_upper{
-        margin-top: 0vh;
+        margin-top: -10vh;
     }
 
     .hand_lower{
@@ -331,29 +317,118 @@ main{
     }
 
     .large_card{
+        width: 80vw;
+        margin: 12vh auto 6vh;
+    }
+
+    .large_card h4{
+        padding-top: calc(((990/2519)*80vw));
+        font-size: var(--text2);
+    }
+
+    .large_card h5{
+        font-size: 2.7vw;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80vw;
+        column-gap: 3vw;
+        row-gap: 4vh;
+    }
+
+    .achievements{
         width: 90vw;
-        height: calc((1034/2519)*90vw);
+        margin-top: 12vh;
+    }
+
+    .head2{
+        margin-bottom: 6vh;
+    }
+
+    .head2 h3{
+        font-size: var(--text2);
+    }
+    
+    .head2 h2{
+        font-size: var(--text1);
+    }
+    
+    .title{
+        padding-top: 3vh;
+        font-size: var(--text2);
+    }
+    
+    .cont{
+        padding-top: 2vh;
+    }
+    
+    .definition{
+        font-size: var(--text3);
+        padding-right: 2vw;
+    }
+
+    .image_div{
+        padding-top: 2vh;
+        width: 120vw;
+        padding-bottom: 2vh;
+    }
+    
+    .dnt{
+        font-size: var(--text4);
+        text-align: start;
+        padding-bottom: 3vh;
+    }
+
+    .front .inner p{
+        padding-top: calc((900/772)*28vw);
+        font-size: var(--text2);
+    }
+
+    .back .inner p{
+        font-size: 4vh;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+    .hand_upper{
+        margin-top: 0vh;
+    }
+
+    .hand_lower{
+        margin-top: -2vh;
+    }
+
+    .head{
+        font-size: var(--text2);
+    }
+
+    .detail1{
+        font-size: var(--text3);
+    }
+
+    .large_card{
+        width: 90vw;
         margin: 10vh auto 4vh;
     }
 
     .large_card h4{
-        padding-top: calc(((890/2519)*80vw));
         font-size: var(--text4);    
     }
 
     .cards{
+        grid-template-columns: repeat(2, 1fr);
         width: 90vw;
-    }
-
-    .back{
-        height: calc((970/772)*28vw);
-        margin: 4vh 0;
-    }
-
-    .small_card h4{
-        padding-top: calc((800/772)*28vw);
-        font-size: var(--text4);
-        padding-left: 2px;
+        column-gap: 4vw;
+        row-gap: 2vh;
     }
 
     .achievements{
@@ -399,6 +474,14 @@ main{
         text-align: start;
         padding-bottom: 3vh;
     }
+
+    .front .inner p{
+        font-size: var(--text4);
+    }
+
+    .back .inner p{
+        font-size: 1.3vh;
+    }
 }
 
 
@@ -431,4 +514,4 @@ main{
     50% {
     transform: translateX(+15px);
     }
-  }  */
+  } 
