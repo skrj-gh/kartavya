@@ -19,6 +19,14 @@ main{
     color: #E8EDD9;
     text-align: center;
     overflow: hidden;
+    background-image: url('../resources/TexturePattern.jpg');
+    background-blend-mode:color-burn;
+}
+
+.texture_wheel{
+    background-image: url('../resources/texture_wheel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hand_upper{
