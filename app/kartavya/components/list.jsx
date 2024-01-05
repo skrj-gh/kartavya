@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import achievement from './resources/achievement.png'
+import achievement from '../resources/achievement.png'
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 import {Accordion, AccordionItem} from "@nextui-org/react";

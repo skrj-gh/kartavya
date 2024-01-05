@@ -113,6 +113,8 @@ main{
     display: inline-block;
     font-size: var(--text2);
     cursor: pointer;
+    padding-bottom: 5vh;
+
 }
 
 .cont{
@@ -297,6 +299,11 @@ padding-left: 0%;
     font-size: var(--text3);
 }
 
+button{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 1025px){
 

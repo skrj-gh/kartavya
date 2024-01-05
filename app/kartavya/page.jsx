@@ -3,7 +3,7 @@ import hand_upper from './resources/hand_upper.png'
 import hand_lower from './resources/hand_lower.png'
 import stars from './resources/stars.png'
 import CardList from './components/cardList'
-import ListItem from './list'
+import ListItem from './components/list'
 
 import './components/kartavya.css'
 

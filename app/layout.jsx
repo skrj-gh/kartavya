@@ -6,6 +6,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 // TO START A DB server -- run this command in separate terminal
 
+// cd app
+// cd kartavya
 // json-server --watch --port 4000 ./_data/db.json
 
 
