@@ -1,19 +1,61 @@
-// import small_card from '../resources/small_card.png'
 // import small_card from '@/app/kartavya/resources/small_card.png'
 
+"use client"
+import { useState } from "react";
+import try_img from '@/app/kartavya/resources/try.jpg'
 
-async function getCards(){
-    const res = await fetch('http://localhost:4000/cards', {
-        next: {
-            revalidate: 3600 //use 0 to opt out of using cache
-        }
-    })
+function getCards(){
+    const [data, setData] = useState(
+        [
+          {
+            "id": "1",
+            "heading": "AIKYAM",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+            "img": "@/app/kartavya/resources/try.jpg"
+          },
+          {
+            "id": "2",
+            "heading": "MANSHAKTI",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+            "img": "@/app/kartavya/resources/try.jpg"
+      
+          },
+          {
+            "id": "3",
+            "heading": "SAFHER",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+            "img": "try_img"
+      
+          },
+          {
+            "id": "4",
+            "heading": "PRITHVI",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+            "img": "../resources/try.png"
+      
+          },
+          {
+            "id": "5",
+            "heading": "NORTHEAST UNVEILED",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+            "img": "../resources/try.jpg"
+      
+          },
+          {
+            "id": "6",
+            "heading": "UDAAN",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+            "img": "../resources/try.jpg"
+      
+          }
+        ]
+      )
 
-    return res.json()
+    return data;
 }
-
-export default async function CardList() {
-    const flip_cards = await getCards();
+export default function CardList() {
+    // const flip_cards = await getCards();
+    let flip_cards = getCards();
     var sectionStyle = {
         width: "100%",
         height: "calc((970/772)*24.667vw)",
@@ -24,7 +66,7 @@ export default async function CardList() {
         // <div key={card.id} className="col" onTouchStart="this.classList.toggle('hover');">
         <div key={card.id} className="col">
             <div className="container">
-                <div className="front" style={{sectionStyle, backgroundImage:`${card.img}`}}>
+                <div className="front" style={{sectionStyle, backgroundImage:`url("${card.img}")`}}>
                     <div className="inner">
                     <p>{card.heading}</p>
                     </div>
