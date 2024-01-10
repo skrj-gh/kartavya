@@ -29,7 +29,7 @@ export default function Home() {
 
 
         <h1 className="head">KARTAVYA</h1>
-        <h3 className="detail1">"Act as if what you do makes a difference. It does"</h3>
+        <h3 className="detail1">&ldquo;Act as if what you do makes a difference. It does&ldquo;</h3>
 
         <div className="large_card_shadow">
           <div className="large_card">

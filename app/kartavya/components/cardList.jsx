@@ -4,51 +4,49 @@
 import { useState } from "react";
 
 function getCards(){
-    const [data, setData] = useState(
-        [
-          {
-            "id": "1",
-            "heading": "AIKYAM",
-            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
-            "img": "/_next/static/media/try1.1d4b8e74.jpg"
-          },
-          {
-            "id": "2",
-            "heading": "MANSHAKTI",
-            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
-            "img": "/_next/static/media/try2.ce351f66.jpg"
-      
-          },
-          {
-            "id": "3",
-            "heading": "SAFHER",
-            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
-            "img": "/_next/static/media/try3.9ee11739.jpg"
-      
-          },
-          {
-            "id": "4",
-            "heading": "PRITHVI",
-            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
-            "img": "/_next/static/media/try4.c7eaa83d.jpg"
-      
-          },
-          {
-            "id": "5",
-            "heading": "NORTHEAST UNVEILED",
-            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
-            "img": "/_next/static/media/try5.d11b6b80.jpg"
-      
-          },
-          {
-            "id": "6",
-            "heading": "UDAAN",
-            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
-            "img": "/_next/static/media/try6.2753b6d4.jpg"
-      
-          }
-        ]
-      )
+    const data = [
+      {
+        "id": "1",
+        "heading": "AIKYAM",
+        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "img": "/try1.jpg"
+      },
+      {
+        "id": "2",
+        "heading": "MANSHAKTI",
+        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "img": "/try2.jpg"
+  
+      },
+      {
+        "id": "3",
+        "heading": "SAFHER",
+        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "img": "/try3.jpg"
+  
+      },
+      {
+        "id": "4",
+        "heading": "PRITHVI",
+        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "img": "/try4.jpg"
+  
+      },
+      {
+        "id": "5",
+        "heading": "NORTHEAST UNVEILED",
+        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "img": "/try5.jpg"
+  
+      },
+      {
+        "id": "6",
+        "heading": "UDAAN",
+        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "img": "/try6.jpg"
+  
+      }
+    ]
 
     return data;
 }

@@ -568,15 +568,3 @@ button{
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-
-
-
-/* DO NOT REMOVE - NECESSARY */
-.fake{
-    background-image: url('../resources/try1.jpg');
-    background-image: url('../resources/try2.jpg');
-    background-image: url('../resources/try3.jpg');
-    background-image: url('../resources/try4.jpg');
-    background-image: url('../resources/try5.jpg');
-    background-image: url('../resources/try6.jpg');
-}
