@@ -61,13 +61,24 @@ main{
     font-weight: 300;
 }
 
+.large_card_shadow{
+    width: max-content;
+    height: max-content;
+    margin: 20vh auto 8vh;
+    border-radius: 30px;
+    background-color: #39a27a;
+    ;
+    transform: rotate(2deg);
+}
+
 .large_card{
     width: 80vw;
     aspect-ratio: 2519/1034;
-    margin: 20vh auto 8vh;
     border-radius: 30px;
+    margin: 20vh auto 8vh;
     background-image: url("../resources/try_large.jpg");
-    background-size:contain;
+    background-size:cover;
+    transform: rotate(-2deg);
 }
 
 .large_card h4{
@@ -78,10 +89,12 @@ main{
 
 .large_card h5{
     position: absolute;
+    text-align: center;
     padding-top: 8%;
     font-size: var(--text3);
-    width: 70%;
-    padding-left: 15%;
+    --text-width: 70%;
+    padding-left: calc((100% - var(--text-width)) / 2);
+    padding-right: calc((100% - var(--text-width)) / 2);
 }
 
 .cards{
@@ -149,10 +162,17 @@ main{
     padding-bottom: 5vh;
 }
 
-.large_card:hover{
+.large_card_shadow:hover{
     cursor: pointer;
     z-index: 1;
     opacity: 0.8;
+    /* background-color: #141414; */
+}
+
+.large_card:hover{
+    cursor: pointer;
+    z-index: 1;
+    /* opacity: 0.8; */
     background-color: #141414;
 }
 
@@ -164,12 +184,17 @@ main{
 .large_card:hover h4::after{
     cursor: pointer;
     content: 'GOAL';
+    visibility: visible;
+    animation: fadeIn 2s;
 }
 
 .large_card:hover h5::after{
+    transition: content 10s ease-in-out;
     cursor: pointer;
     content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam qui soluta error autem harum quo id eius ut doloribus nam temporibus corporis laborum sit quae, fugiat assumenda molestiae enim earum.";
     z-index: 10;
+    animation: fadeIn 2s;
+
 }
   
   .col{
@@ -212,10 +237,6 @@ main{
     background-image: url("../resources/small_card.png");
     background-size:contain;
   }
-  
-  /* .front{
-    background-image: url("../resources/try.jpg");
-  } */
 
   .front:after{
       position: absolute;
@@ -310,6 +331,22 @@ button{
     justify-content: space-between;
 }
 
+@media (max-height: 913px) and (max-width: 1367){
+    .large_card{
+        width: 100vw;
+    }
+
+    .large_card_shadow{
+        width: 100vw;
+    }
+
+    .hand_upper{
+        margin-top: 0;
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 1025px){
 
     .hand_upper{
@@ -398,7 +435,7 @@ button{
     }
 
     .back .inner p{
-        font-size: 4vh;
+        font-size: var(--text3);
     }
 }
 
@@ -409,7 +446,7 @@ button{
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 913px){
 
     .hand_upper{
         margin-top: 0vh;
@@ -424,23 +461,36 @@ button{
     }
 
     .detail1{
-        font-size: var(--text3);
+        font-size: calc(var(--text3)-1vh);
+        --text-width: 80%;
+        padding-left: calc((100% - var(--text-width)) / 2);
+        padding-right: calc((100% - var(--text-width)) / 2);
     }
 
     .large_card{
         width: 90vw;
         margin: 10vh auto 4vh;
+        aspect-ratio: 772/970;
+    }
+
+    .stars2{
+        margin-top: calc(772/970*5vw);
+    }
+
+    .large_card h5{
+        padding-top: calc(772/970*30vw);
+        font-size: 4.5vw;
     }
 
     .large_card h4{
-        font-size: var(--text4);    
+        padding-top: calc(772/970*120vw);
+        font-size: var(--text3);    
     }
 
     .cards{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         width: 90vw;
-        column-gap: 4vw;
-        row-gap: 2vh;
+        row-gap: 3vh;
     }
 
     .achievements{
@@ -488,11 +538,12 @@ button{
     }
 
     .front .inner p{
-        font-size: var(--text4);
+        padding-top: calc((772/970)*100vw);
+        font-size: var(--text2);
     }
 
     .back .inner p{
-        font-size: 1.3vh;
+        font-size: 3vh;
     }
 }
 
@@ -527,3 +578,21 @@ button{
     transform: translateX(+15px);
     }
   } 
+
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+/* DO NOT REMOVE - NECESSARY */
+.fake{
+    background-image: url('../resources/try1.jpg');
+    background-image: url('../resources/try2.jpg');
+    background-image: url('../resources/try3.jpg');
+    background-image: url('../resources/try4.jpg');
+    background-image: url('../resources/try5.jpg');
+    background-image: url('../resources/try6.jpg');
+}

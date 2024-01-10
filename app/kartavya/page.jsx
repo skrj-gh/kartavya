@@ -31,34 +31,38 @@ export default function Home() {
         <h1 className="head">KARTAVYA</h1>
         <h3 className="detail1">"Act as if what you do makes a difference. It does"</h3>
 
-        
-        <div className="large_card">
-          <div className='stars1'>
-            <Image
-              src={stars}
-              alt="stars"
-              style={{
-                width: '5vw',
-                height: 'auto',
-                float: 'right',
-              }}
-              quality={100}
-              placeholder='blur'
-            />
-          </div>
-          <h5></h5>
-          <h4></h4>
-          <div className='stars2'>
-            <Image
-              src={stars}
-              alt="stars"
-              style={{
-                width: '5vw',
-                height: 'auto',
-              }}
-              quality={100}
-              placeholder='blur'
-            />
+        <div className="large_card_shadow">
+          <div className="large_card">
+
+            <div className='stars1'>
+              <Image
+                src={stars}
+                alt="stars"
+                style={{
+                  width: '5vw',
+                  height: 'auto',
+                  float: 'right',
+                  marginTop: '-3vw',
+                }}
+                quality={100}
+                placeholder='blur'
+              />
+            </div>
+            <h5></h5>
+            <h4></h4>
+            <div className='stars2'>
+              <Image
+                src={stars}
+                alt="stars"
+                style={{
+                  width: '5vw',
+                  height: 'auto',
+                }}
+                quality={100}
+                placeholder='blur'
+              />
+            </div>
+            
           </div>
         </div>
 
