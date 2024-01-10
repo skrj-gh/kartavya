@@ -331,22 +331,6 @@ button{
     justify-content: space-between;
 }
 
-@media (max-height: 913px) and (max-width: 1367){
-    .large_card{
-        width: 100vw;
-    }
-
-    .large_card_shadow{
-        width: 100vw;
-    }
-
-    .hand_upper{
-        margin-top: 0;
-        display: none;
-    }
-
-}
-
 @media screen and (max-width: 1025px){
 
     .hand_upper{
