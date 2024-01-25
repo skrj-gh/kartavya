@@ -1,7 +1,6 @@
 // import small_card from '@/app/kartavya/resources/small_card.png'
 
 "use client"
-import { useState } from "react";
 
 function getCards(){
     const data = [
