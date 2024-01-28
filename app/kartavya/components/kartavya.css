@@ -7,9 +7,10 @@
 :root{
     --text1: 10vh;
     --text2: 4vh;
-    --text3: 3vh;
+    --text3: calc(2vh + 10px);
     --text4: 2vh;
     --text5: 7vh;
+    --text6: calc(2vh + 8px);
     --font1: "FONTSPRING DEMO - Freigeist Con Black";
     --font2: "Futura PT";
 }
@@ -67,7 +68,6 @@ main{
     margin: 20vh auto 8vh;
     border-radius: 30px;
     background-color: #39a27a;
-    ;
     transform: rotate(2deg);
 }
 
@@ -178,7 +178,7 @@ main{
 
 .large_card h4::after{
     cursor: pointer;
-    content: 'SANRAKSHAN';
+    content: 'UDAAN';
 }
 
 .large_card:hover h4::after{
@@ -191,7 +191,7 @@ main{
 .large_card:hover h5::after{
     transition: content 10s ease-in-out;
     cursor: pointer;
-    content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam qui soluta error autem harum quo id eius ut doloribus nam temporibus corporis laborum sit quae, fugiat assumenda molestiae enim earum.";
+    content: "Udaan, launched as 'Bachpan' in 2011, aims to deliver hope to underprivileged children and create an impact in their lives through the conduction of various educational workshops and recreational activities.";
     z-index: 10;
     animation: fadeIn 2s;
 
@@ -234,7 +234,8 @@ main{
   }
   
   .back{
-    background-image: url("../resources/small_card.png");
+    /* background-image: url("../resources/small_card.png"); */
+    background-color: #5965C7;
     background-size:contain;
   }
 
@@ -527,7 +528,7 @@ button{
     }
 
     .back .inner p{
-        font-size: 3vh;
+        font-size: var(--text6);
     }
 }
 

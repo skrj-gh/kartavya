@@ -7,41 +7,41 @@ function getCards(){
       {
         "id": "1",
         "heading": "AIKYAM",
-        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "body": "Aikyam's main aim is to sensitise people about how communal violence and hatred is still a burning issue in India and to promote the idea of 'unity in diversity' through performances, panel discussions and fundraisers.",
         "img": "/try1.jpg"
       },
       {
         "id": "2",
         "heading": "MANSHAKTI",
-        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "body": "Manshakti is Alcheringa's mental health awareness campaign where we strive to address the wide variety of mental health issues that people suffer from, while reducing stigma and promoting a culture of care and understanding.",
         "img": "/try2.jpg"
   
       },
       {
         "id": "3",
         "heading": "SAFHER",
-        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "body": "Acknowledging the sad reality of violence against women and lack of women safety in India, SafHer, through a variety of workshops and other programmes highlights that women raise their voice against misconduct and get perpetrators to justice.",
         "img": "/try3.jpg"
   
       },
       {
         "id": "4",
         "heading": "PRITHVI",
-        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "body": "As the name suggests, Prithvi aims at taking active steps to save our planet from climate change and promotes environmental protectionism right from the grassroot level through a variety of programmes to involve the people around us.",
         "img": "/try4.jpg"
   
       },
       {
         "id": "5",
         "heading": "NORTHEAST UNVEILED",
-        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "body": "North East Unveiled is conducted every year to promote the cultural diversity of North East India through performances and showcasing of regional art and handicraft forms, as well as to address the social issues in this region and come up with solutions.",
         "img": "/try5.jpg"
   
       },
       {
         "id": "6",
-        "heading": "UDAAN",
-        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        "heading": "SANRAKSHAN",
+        "body": "Sanrakshan is a dual-purpose campaign tackling AIDS awareness and substance abuse, fostering a socially responsible community that is aware of safe practices and at the same time eliminating the stigma surrounding these issues.",
         "img": "/try6.jpg"
   
       }
