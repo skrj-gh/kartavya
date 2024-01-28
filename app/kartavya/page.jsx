@@ -5,7 +5,7 @@ import stars from './resources/stars.png'
 import CardList from './components/cardList'
 import ListItem from './components/list'
 
-import './components/kartavya.css'
+import styles from './components/kartavya.css'
 
 
 

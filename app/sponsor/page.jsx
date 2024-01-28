@@ -1,16 +1,10 @@
-import './App.css';
+import './components/sponsor.css';
 import design from "./resources/design.png";
-// import puma from "./resources/pumaa.jpg";
-// import lakme from "./resources/lakme.jpg";
-// import gucci from "./resources/gucci.png";
-
-
-
 
 function App () {
-  const image=[
-    gucci
-  ];
+  // const image=[
+  //   gucci
+  // ];
   return (
     <div className="App">
 
@@ -44,14 +38,14 @@ function App () {
        <h1> POWERED BY</h1>
       </div>
       <div className='poweredimg'>
-      {image.map((imageUrl,index) => (
+      {/* {image.map((imageUrl,index) => (
             <img key={index} src={imageUrl}  />
-          ))}
+          ))} */}
       </div>
       
     <div className='sponsorfooter'>
         
-        <div>Media Sponsor</div>
+        {/* <div>Media Sponsor</div>
        <div className='sponsor_row'>
        <div className='sponsor_card'>
          <img id='sponsorimage' src = {puma}/>
@@ -95,7 +89,7 @@ function App () {
          <div className='sponsor_name'> Name</div>
          <div className='sponsor_tag'> Partner</div>
         </div>
-        </div>
+        </div> */}
     
     </div>
 
