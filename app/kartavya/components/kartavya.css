@@ -10,7 +10,7 @@
     --text3: calc(2vh + 10px);
     --text4: 2vh;
     --text5: 7vh;
-    --text6: calc(2vh + 8px);
+    --text6: calc(1vh + 8px);
     --font1: "FONTSPRING DEMO - Freigeist Con Black";
     --font2: "Futura PT";
 }
@@ -68,6 +68,7 @@ main{
     margin: 20vh auto 8vh;
     border-radius: 30px;
     background-color: #39a27a;
+    ;
     transform: rotate(2deg);
 }
 
@@ -420,7 +421,7 @@ button{
     }
 
     .back .inner p{
-        font-size: var(--text3);
+        font-size: var(--text4);
     }
 }
 
@@ -497,7 +498,7 @@ button{
     
     .title{
         padding-top: 3vh;
-        font-size: var(--text3);
+        font-size: var(--text4);
     }
     
     .cont{
