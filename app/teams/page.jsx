@@ -190,8 +190,6 @@ export default function Teams() {
                         style={{
                             width: '45vw',
                             height: 'auto',
-                            // marginBottom: '40px',
-                            // paddingBottom: '40px',
                         }}
                     />
                 </div>
@@ -219,8 +217,6 @@ export default function Teams() {
                         style={{
                             width: '45vw',
                             height: 'auto',
-                            // marginBottom: '50px',
-                            paddingBottom: '50px'
                         }}
                     />
                 </div>
