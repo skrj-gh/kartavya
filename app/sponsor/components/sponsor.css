@@ -19,7 +19,6 @@
 }
 
 .titlesponsorimg{
- 
   display: flex;
   padding-left: 40vw;
   padding-top: 3.8vw;
@@ -48,10 +47,13 @@
   height: 20vw ;
   width: 20vw;
   overflow: hidden; 
-  object-fit: fill;
-  display: flex;
+  /* object-fit: fill; */
+  /* display: flex; */
   z-index: 10;
-  position: relative;
+  /* position: relative; */
+  border-radius: 1.3vw;
+  background-image: url('../resources/gucci.png');
+  background-size: contain;
 }
 
 #imgdesign{
@@ -98,10 +100,13 @@
   height: 18vw ;
   width: 18vw;
   overflow: hidden; 
-  object-fit: fill;
-  display: flex;
+  /* object-fit: fill; */
+  /* display: flex; */
   z-index: 10;
-  position: relative;
+  /* position: relative; */
+  border-radius: 1.3vw;
+  background-image: url('../resources/gucci.png');
+  background-size: contain;
 }
 
 #coimgdesign{
@@ -116,36 +121,36 @@
   padding-top: 1.7vw;
   color: white;
 }
+
 .poweredimg{
   height: 16vw ;
   width: 16vw;
-  display: flex;
-  padding-left: 42vw;
-  padding-top: 0.3vw;
-  overflow: hidden;
-  border-radius: 5px;
+  /* padding-top: 3vw; */
   
-
+  margin: 2vw auto;
+  background-image: url('../resources/gucci.png');
+  background-size: contain;
+  border-radius: 1.3vw;
 }
 
 .sponsorfooter{
-   display: grid;
+   /* display: grid; */
    padding-top: 2vw;
-  padding-left: 10vw;
+  /* padding-left: 10vw; */
   padding-bottom: 2vw;
   /* border-bottom: 0.5vw solid black; */
 }
 
-.sponsor_row{
+/* .sponsor_row{
   align-items: center;
   display: flex;
   gap:1vw;
   height: 22.5vh;
     padding-top: 8vw;
     padding-bottom: 2.1vw;
-    /* border: 3px solid greenyellow; */
+    /* border: 3px solid greenyellow;} */
+ 
 
-}
 .sponsor_card{
   color: #fff;
   flex-direction: column;
@@ -185,55 +190,87 @@
   font-size: 1.2vw;
   padding-bottom: 2vw;
 }
- @media (max-width: 1442px) {
-  #sponsorimage{
-     width: 13vw ;
-     height: 22vh;
-  }
+
+.heading2{
+  font-size: 3vw;
+  font-weight: 600;
+  padding-bottom: 5vw;
 }
 
-@media (max-width: 1025px ),( max-height: 1360 ) {
-  #sponsorimage{
+.sponsors{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80vw;
+  row-gap: 10vh;
+  column-gap: 2vw;
+  margin: 0 auto;
+}
+
+.sponsorimg{
+  width: 13vw;
+  aspect-ratio: 1/1;
+
+}
+
+.name h2{
+  font-size: 1.2vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.partner p{
+  font-size: 1vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+@media (max-width: 1442px) {
+  #sponsorimg{
+     width: 13vw;
+     height: 22vh;
+  }
+} 
+
+ @media (max-width: 1025px ),( max-height: 1360 ) {
+  #sponsorimg{
     width: 12vw;
     height: 19vh;
     padding-bottom: 2vw;
   }
-  .sponsor_name{
+  
+  /* .sponsor_name{
     font-size: 2vw;
-    padding-top: 1vw;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+  } */
   
+  .name{
+    height: 3vw;
+    font-size: 6vw;
   }
-  .sponsor_row{
-    padding-bottom: 1.8vw;
-  }
-  .sponsor_card{
-    height: 27.3vw;
-  }
-  .sponsor_tag{
-    font-size: 1.5vw;
+  .partner{
+    font-size: 3vw;
   }
   }
   
-  @media (max-width: 430px),(min-height: 932px) {
-    #sponsorimage{
+   @media (max-width: 430px){/*,(min-height: 932px) { */
+    #sponsorimg{
       width: 18vw;
       height: 23vh;
       padding-bottom: 2vw;
     }
-    .sponsor_name{
-      font-size: 3.8vw;
-      padding-top: 1vw;
+    .name{
+      font-size: 3vw;
+      padding-top: 3vw;
     
     }
-    .sponsor_row{
-      height: 20vh;
-    }
+   
     .sponsor_card{
-      height: 35vw;
+      height: 40vw;
       padding-bottom: 2vw;
     }
-    .sponsor_tag{
-      font-size: 3vw;
+    .partner{
+      font-size: 1vw;
+      padding-top: 2vh;
     }
     h1{
      font-size:  3.7vw;
@@ -241,5 +278,7 @@
     .titlesponsorimg{
       height: 30vw;
       width: 25vw;
+      right: 25vw;
     }
+   
   } 

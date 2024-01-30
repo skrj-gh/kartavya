@@ -1,11 +1,18 @@
-import './components/sponsor.css';
-import design from "./resources/design.png";
+import "./components/sponsor.css"
+import design from './resources/design.png'
+import SponsorList from "./components/sponsor_list"
+import gucci from './resources/gucci.png'
+import Image from "next/image";
+
+
+
 
 function App () {
-  // const image=[
-  //   gucci
-  // ];
+  const image=[
+    gucci
+  ];
   return (
+    <>
     <div className="App">
 
       <h1>We Have Worked With</h1>
@@ -13,10 +20,21 @@ function App () {
       <div className="title">
       <h1> TITLE SPONSOR </h1> </div>
       <div className="titlesponsorimg">
-      <img id='imgdesign' src={ design} />
+      <Image 
+        src={design} 
+        alt="design" 
+        style={{
+          width: '36.3vw',
+          height: '11.2vw',
+          position: "absolute",
+          zIndex: '1',
+          right: '31vw',
+        }}
+      />
       <div className='card_shadowt'>
       <div className='cardt'>
         <div className='imagecardt'>
+          {/* background image */}
         </div>
       </div>
     </div> 
@@ -25,10 +43,21 @@ function App () {
       <div className="cotitle">
       <h1> CO-TITLE SPONSOR </h1> </div>
       <div className="cotitlesponsorimg">
-      <img id='coimgdesign' src={ design} />
+      <Image 
+        src={design} 
+        alt="design" 
+        style={{
+          width: '36.3vw',
+          height: '11.2vw',
+          position: "absolute",
+          zIndex: '1',
+          right: '30.5vw',
+        }}
+      />
       <div className='card_shadowct'>
       <div className='cardct'>
         <div className='imagecardct'>
+          {/* background image */}
         </div>
       </div>
     </div> 
@@ -38,62 +67,29 @@ function App () {
        <h1> POWERED BY</h1>
       </div>
       <div className='poweredimg'>
-      {/* {image.map((imageUrl,index) => (
-            <img key={index} src={imageUrl}  />
-          ))} */}
+      {/* <Image 
+        src={gucci} 
+        alt="design"
+        style={{
+          width: '100%',
+          height: '100%',
+          color: 'black'
+
+        }}
+      /> */}
       </div>
       
     <div className='sponsorfooter'>
         
-        {/* <div>Media Sponsor</div>
-       <div className='sponsor_row'>
-       <div className='sponsor_card'>
-         <img id='sponsorimage' src = {puma}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div> 
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {lakme}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {puma}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {puma}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        </div>
-        <div className='sponsor_row'>
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {lakme}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {puma}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {lakme}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        <div className='sponsor_card'>
-         <img id='sponsorimage' src = {lakme}/>
-         <div className='sponsor_name'> Name</div>
-         <div className='sponsor_tag'> Partner</div>
-        </div>
-        </div> */}
-    
+      <div className="heading2">Media Sponsors</div>
+      <div className="sponsors">
+        <SponsorList></SponsorList>  
+      </div>  
+
     </div>
 
     </div>
+    </>
   );
   
 };

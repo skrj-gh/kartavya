@@ -59,29 +59,17 @@ function getCards(){
     return data;
 }
 
-export default function CardList() {
-    let sponsor_card = getCards();
-    var sectionStyle = {
-        width: "100%",
-    };
-  return (
-    <>
-        {sponsor_card.map((card)=>(
-        <div key={card.id} className="col">
-            <div className="container">
-                <div className="front" style={{sectionStyle, backgroundImage:`url('${card.img}')`}}>
-                    <div className="inner">
-                    <p>{card.heading}</p>
-                    </div>
-                </div>
-                <div className="back">
-                    <div className="inner">
-                    <p>{card.body}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        ))}
-    </>
-  )
+export default function SponsorList() {
+  let sponsor_card = getCards();
+return (
+  <>
+      {sponsor_card.map((sponsor)=>(
+      <div key={sponsor.id} className="col">
+          <img className="sponsorimg" src={sponsor.img}/>
+          <div className="name"><h2>{sponsor.name}</h2></div>
+          <div className="partner"><p>{sponsor.partner}</p></div>
+      </div>
+      ))}
+  </>
+)
 }
