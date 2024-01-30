@@ -24,6 +24,8 @@ export default function MainPage() {
       <Link href="/kartavya">Kartavya Page</Link>
       <br></br>
       <Link href="/sponsor">Sponsor Page</Link>
+      <br />
+      <Link href="/teams">Teams Page</Link>
     </>
   )
 }
