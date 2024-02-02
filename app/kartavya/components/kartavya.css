@@ -197,6 +197,10 @@ main{
     animation: fadeIn 2s;
 
 }
+
+.large_card_mobile{
+    display: none;
+}
   
   .col{
     cursor: pointer;
@@ -333,6 +337,17 @@ button{
     justify-content: space-between;
 }
 
+.star2{
+    position: relative;
+    top: calc(3vh);
+}
+
+@media screen and (max-width: 1281px){
+    .back .inner p{
+        font-size: calc(2vh);
+    }
+}
+
 @media screen and (max-width: 1025px){
 
     .hand_upper{
@@ -457,6 +472,7 @@ button{
         width: 90vw;
         margin: 10vh auto 4vh;
         aspect-ratio: 772/970;
+        display: none;
     }
 
     .stars2{
@@ -471,6 +487,12 @@ button{
     .large_card h4{
         padding-top: calc(772/970*120vw);
         font-size: var(--text3);    
+    }
+
+    .large_card_mobile{
+        display: block;
+        width: 90vw;
+        margin: 0 auto 3vh;
     }
 
     .cards{
@@ -530,6 +552,12 @@ button{
 
     .back .inner p{
         font-size: var(--text6);
+    }
+}
+
+@media screen and (max-width: 750px){
+    .star2{
+        top: 1vh;
     }
 }
 
