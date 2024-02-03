@@ -22,7 +22,7 @@ main{
     overflow: hidden;
     background-image: url('../resources/TexturePattern.jpg');
     background-blend-mode:color-burn;
-    user-select: none;
+    /* user-select: none; */
 }
 
 .teams_heading{
@@ -78,6 +78,7 @@ main{
     font-size: var(--text_head);
     color: var(--color_prb);
     padding-top: 20vh;
+    /* font-weight: 500; */
 }
 
 .bg_prb{

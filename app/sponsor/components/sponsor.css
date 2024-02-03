@@ -49,6 +49,7 @@ main{
 .coming_soon h2{
   font-size: 6vw;
   position: relative;
+  font-weight: 700;
 }
 
 .coming_soon h5{
@@ -63,6 +64,7 @@ main{
   background-image: url("../resources/bg1.jpg");
   background-size:cover;
   background-repeat: repeat;
+  padding-top: 15vw;
 }
 
 .App h1{

@@ -22,6 +22,7 @@ main{
     overflow: hidden;
     background-image: url('../resources/TexturePattern.jpg');
     background-blend-mode:color-burn;
+    user-select: none;
 }
 
 .texture_wheel{
@@ -68,8 +69,8 @@ main{
     margin: 20vh auto 8vh;
     border-radius: 30px;
     background-color: #39a27a;
-    ;
     transform: rotate(2deg);
+    opacity: 0.8;
 }
 
 .large_card{
@@ -206,6 +207,7 @@ main{
     cursor: pointer;
     width: 100%;
     aspect-ratio: 772/970;
+    opacity: 0.8;
   }
   
   .container{
@@ -242,6 +244,7 @@ main{
     /* background-image: url("../resources/small_card.png"); */
     background-color: #5965C7;
     background-size:contain;
+    /* opacity: 0.8; */
   }
 
   .front:after{
